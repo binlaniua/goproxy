@@ -3,7 +3,7 @@ package services
 import (
 	"bytes"
 	"fmt"
-	"github.com/snail007/goproxy/utils"
+	"proxy/utils"
 	"log"
 	"net"
 	"strconv"

@@ -15,9 +15,9 @@ proxy使用gombile实现了一份go代码编译为android和ios平台下面可�
 
 ## Android SDK
   
-[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://github.com/snail007/goproxy-sdk-android/) [![license](https://img.shields.io/github/license/snail007/goproxy-sdk-android.svg?style=plastic)]() [![download_count](https://img.shields.io/github/downloads/snail007/goproxy-sdk-android/total.svg?style=plastic)](https://github.com/snail007/goproxy-sdk-android/releases) [![download](https://img.shields.io/github/release/snail007/goproxy-sdk-android.svg?style=plastic)](https://github.com/snail007/goproxy-sdk-android/releases)  
+[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://proxy-sdk-android/) [![license](https://img.shields.io/github/license/snail007/goproxy-sdk-android.svg?style=plastic)]() [![download_count](https://img.shields.io/github/downloads/snail007/goproxy-sdk-android/total.svg?style=plastic)](https://proxy-sdk-android/releases) [![download](https://img.shields.io/github/release/snail007/goproxy-sdk-android.svg?style=plastic)](https://proxy-sdk-android/releases)
   
-[点击下载Android-SDK](https://github.com/snail007/goproxy-sdk-android/releases)  
+[点击下载Android-SDK](https://proxy-sdk-android/releases)
 在Android系统提供的sdk形式是一个后缀为.aar的类库文件,开发的时候只需要把arr类库文件引入android项目即可.  
 
 ### Android-SDK使用实例
@@ -53,9 +53,9 @@ Proxy.stop(serviceID);
 
 ## IOS SDK
   
-[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://github.com/snail007/goproxy-sdk-ios/) [![license](https://img.shields.io/github/license/snail007/goproxy-sdk-ios.svg?style=plastic)]() [![download_count](https://img.shields.io/github/downloads/snail007/goproxy-sdk-ios/total.svg?style=plastic)](https://github.com/snail007/goproxy-sdk-ios/releases) [![download](https://img.shields.io/github/release/snail007/goproxy-sdk-ios.svg?style=plastic)](https://github.com/snail007/goproxy-sdk-ios/releases)  
+[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://proxy-sdk-ios/) [![license](https://img.shields.io/github/license/snail007/goproxy-sdk-ios.svg?style=plastic)]() [![download_count](https://img.shields.io/github/downloads/snail007/goproxy-sdk-ios/total.svg?style=plastic)](https://proxy-sdk-ios/releases) [![download](https://img.shields.io/github/release/snail007/goproxy-sdk-ios.svg?style=plastic)](https://proxy-sdk-ios/releases)
   
-[点击下载IOS-SDK](https://github.com/snail007/goproxy-sdk-ios/releases)  
+[点击下载IOS-SDK](https://proxy-sdk-ios/releases)
 在IOS系统提供的sdk形式是一个后缀为.framework的类库文件夹,开发的时候只需要把类库文件引入项目,然后调用方法即可.  
 
 ### IOS-SDK使用实例
@@ -98,9 +98,9 @@ Proxy.stop(serviceID);
 
 
 ## Windows SDK
-[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://github.com/snail007/goproxy-sdk-windows/) [![license](https://img.shields.io/github/license/snail007/goproxy-sdk-windows.svg?style=plastic)]() [![download_count](https://img.shields.io/github/downloads/snail007/goproxy-sdk-windows/total.svg?style=plastic)](https://github.com/snail007/goproxy-sdk-windows/releases) [![download](https://img.shields.io/github/release/snail007/goproxy-sdk-windows.svg?style=plastic)](https://github.com/snail007/goproxy-sdk-windows/releases)  
+[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://proxy-sdk-windows/) [![license](https://img.shields.io/github/license/snail007/goproxy-sdk-windows.svg?style=plastic)]() [![download_count](https://img.shields.io/github/downloads/snail007/goproxy-sdk-windows/total.svg?style=plastic)](https://proxy-sdk-windows/releases) [![download](https://img.shields.io/github/release/snail007/goproxy-sdk-windows.svg?style=plastic)](https://proxy-sdk-windows/releases)
   
-[点击下载Windows-SDK](https://github.com/snail007/goproxy-sdk-windows/releases)  
+[点击下载Windows-SDK](https://proxy-sdk-windows/releases)
 在Windows系统提供的sdk形式是一个后缀为.dll的类库文件,开发的时候只需要把dll类库文件加载,然后调用方法即可.  
 
 ### Windows-SDK使用实例  
@@ -172,9 +172,9 @@ int main()
 C++示例2，请移步：[GoProxyForC](https://github.com/SuperPowerLF2/GoProxyForC)   
 
 ## Linux SDK
-[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://github.com/snail007/goproxy-sdk-linux/) [![license](https://img.shields.io/github/license/snail007/goproxy-sdk-linux.svg?style=plastic)]() [![download_count](https://img.shields.io/github/downloads/snail007/goproxy-sdk-linux/total.svg?style=plastic)](https://github.com/snail007/goproxy-sdk-linux/releases) [![download](https://img.shields.io/github/release/snail007/goproxy-sdk-linux.svg?style=plastic)](https://github.com/snail007/goproxy-sdk-linux/releases)  
+[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://proxy-sdk-linux/) [![license](https://img.shields.io/github/license/snail007/goproxy-sdk-linux.svg?style=plastic)]() [![download_count](https://img.shields.io/github/downloads/snail007/goproxy-sdk-linux/total.svg?style=plastic)](https://proxy-sdk-linux/releases) [![download](https://img.shields.io/github/release/snail007/goproxy-sdk-linux.svg?style=plastic)](https://proxy-sdk-linux/releases)
   
-[点击下载Linux-SDK](https://github.com/snail007/goproxy-sdk-linux/releases)  
+[点击下载Linux-SDK](https://proxy-sdk-linux/releases)
 在Linux系统提供的sdk形式是一个后缀为.so的类库文件,开发的时候只需要把so类库加载,调用方法即可.  
 
 ### Linux-SDK使用实例
@@ -206,9 +206,9 @@ int main() {
 `./test-proxy`  
 
 ## MacOS SDK
-[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://github.com/snail007/goproxy-sdk-mac/) [![license](https://img.shields.io/github/license/snail007/goproxy-sdk-mac.svg?style=plastic)]() [![download_count](https://img.shields.io/github/downloads/snail007/goproxy-sdk-mac/total.svg?style=plastic)](https://github.com/snail007/goproxy-sdk-mac/releases) [![download](https://img.shields.io/github/release/snail007/goproxy-sdk-mac.svg?style=plastic)](https://github.com/snail007/goproxy-sdk-mac/releases)  
+[![stable](https://img.shields.io/badge/stable-stable-green.svg)](https://proxy-sdk-mac/) [![license](https://img.shields.io/github/license/snail007/goproxy-sdk-mac.svg?style=plastic)]() [![download_count](https://img.shields.io/github/downloads/snail007/goproxy-sdk-mac/total.svg?style=plastic)](https://proxy-sdk-mac/releases) [![download](https://img.shields.io/github/release/snail007/goproxy-sdk-mac.svg?style=plastic)](https://proxy-sdk-mac/releases)
   
-[点击下载MacOS-SDK](https://github.com/snail007/goproxy-sdk-mac/releases)  
+[点击下载MacOS-SDK](https://proxy-sdk-mac/releases)
 在MacOS系统提供的sdk形式是一个后缀为.dylib的类库文件,开发的时候只需要把so类库加载,调用方法即可.  
 
 ### MacOS-SDK使用实例
@@ -253,7 +253,7 @@ tclient
 ```
 服务启动时,如果存在正在运行的相同ID的服务,那么之前的服务会被停掉,后面启动的服务覆盖之前的服务.  
 所以要保证每次启动服务的时候,第一个ID参数唯一.  
-上面这些服务的具体使用方式和具体参数,可以参考[proxy手册](https://github.com/snail007/goproxy/blob/master/README_ZH.md)  
+上面这些服务的具体使用方式和具体参数,可以参考[proxy手册](https://proxy/blob/master/README_ZH.md)
 sdk里面的服务不支持手册里面的：--daemon和--forever参数.  
 
 

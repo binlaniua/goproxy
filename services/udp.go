@@ -3,8 +3,8 @@ package services
 import (
 	"bufio"
 	"fmt"
-	"github.com/snail007/goproxy/services/kcpcfg"
-	"github.com/snail007/goproxy/utils"
+	"proxy/services/kcpcfg"
+	"proxy/utils"
 	"hash/crc32"
 	"io"
 	"log"

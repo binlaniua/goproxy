@@ -6,8 +6,6 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"github.com/snail007/goproxy/services/kcpcfg"
-	"github.com/snail007/goproxy/utils/sni"
 	"io"
 	"io/ioutil"
 	"log"
@@ -16,6 +14,9 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"proxy/services/kcpcfg"
+	"proxy/utils/sni"
 
 	"github.com/golang/snappy"
 	"github.com/miekg/dns"
@@ -648,6 +649,7 @@ func (c *ClientKeyRouter) GetKey() string {
 
 type DomainResolver struct {
 	ttl         int
+	httpDns     bool
 	dnsAddrress string
 	data        ConcurrentMap
 }
@@ -657,10 +659,10 @@ type DomainResolverItem struct {
 	expiredAt int64
 }
 
-func NewDomainResolver(dnsAddrress string, ttl int) DomainResolver {
-
+func NewDomainResolver(dnsAddrress string, isHttpDns bool, ttl int) DomainResolver {
 	return DomainResolver{
 		ttl:         ttl,
+		httpDns:     isHttpDns,
 		dnsAddrress: dnsAddrress,
 		data:        NewConcurrentMap(),
 	}

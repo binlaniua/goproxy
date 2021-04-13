@@ -3,11 +3,11 @@
 
 ## Windows
 
-- 官方java版本,项目主页:[goproxy-jui](https://github.com/snail007/goproxy-jui)
+- 官方java版本,项目主页:[goproxy-jui](https://proxy-jui)
 
 ## Linux
 
-- 官方java版本,项目主页:[goproxy-jui](https://github.com/snail007/goproxy-jui)
+- 官方java版本,项目主页:[goproxy-jui](https://proxy-jui)
 
 ## MacOS
 
@@ -15,7 +15,7 @@
 
 ## Android
 
-- proxy-go,一个非官方实现版本,界面比较简陋,但是够用.下载地址:[proxy-go](https://github.com/snail007/goproxy-gui-stuff/releases/tag/proxy-go-release)
+- proxy-go,一个非官方实现版本,界面比较简陋,但是够用.下载地址:[proxy-go](https://proxy-gui-stuff/releases/tag/proxy-go-release)
 
 
 ## IOS

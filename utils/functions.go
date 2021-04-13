@@ -10,7 +10,7 @@ import (
 	"encoding/pem"
 	"errors"
 	"fmt"
-	"github.com/snail007/goproxy/services/kcpcfg"
+	"proxy/services/kcpcfg"
 	"io"
 	"io/ioutil"
 	"log"
@@ -22,7 +22,7 @@ import (
 
 	"golang.org/x/crypto/pbkdf2"
 
-	"github.com/snail007/goproxy/utils/id"
+	"proxy/utils/id"
 	"strconv"
 	"strings"
 	"time"

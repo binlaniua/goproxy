@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/snail007/goproxy/services"
+	"proxy/services"
 	"log"
 	"os"
 	"os/signal"

@@ -2,7 +2,7 @@ package utils
 
 import (
 	"fmt"
-	"github.com/snail007/goproxy/services/kcpcfg"
+	"proxy/services/kcpcfg"
 	"log"
 	"net"
 	"runtime/debug"

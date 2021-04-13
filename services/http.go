@@ -2,8 +2,8 @@ package services
 
 import (
 	"fmt"
-	"github.com/snail007/goproxy/utils"
-	"github.com/snail007/goproxy/utils/conncrypt"
+	"proxy/utils"
+	"proxy/utils/conncrypt"
 	"io"
 	"io/ioutil"
 	"log"
@@ -98,7 +98,7 @@ func (s *HTTP) InitService() (err error) {
 		s.checker = utils.NewChecker(*s.cfg.HTTPTimeout, int64(*s.cfg.Interval), *s.cfg.Blocked, *s.cfg.Direct)
 	}
 	if *s.cfg.DNSAddress != "" {
-		(*s).domainResolver = utils.NewDomainResolver(*s.cfg.DNSAddress, *s.cfg.DNSTTL)
+		(*s).domainResolver = utils.NewDomainResolver(*s.cfg.DNSAddress, *s.cfg.DNSHttp, *s.cfg.DNSTTL)
 	}
 	if *s.cfg.ParentType == "ssh" {
 		err = s.ConnectSSH()

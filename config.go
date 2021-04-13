@@ -4,17 +4,18 @@ import (
 	"bufio"
 	"crypto/sha1"
 	"fmt"
-	"github.com/snail007/goproxy/services"
-	"github.com/snail007/goproxy/services/kcpcfg"
-	"github.com/snail007/goproxy/utils"
 	"log"
 	"os"
 	"os/exec"
 	"time"
 
-	kcp "github.com/xtaci/kcp-go"
+	"proxy/services"
+	"proxy/services/kcpcfg"
+	"proxy/utils"
+
+	"github.com/xtaci/kcp-go"
 	"golang.org/x/crypto/pbkdf2"
-	kingpin "gopkg.in/alecthomas/kingpin.v2"
+	"gopkg.in/alecthomas/kingpin.v2"
 )
 
 var (
@@ -98,6 +99,7 @@ func initConfig() (err error) {
 	httpArgs.AuthURLOkCode = http.Flag("auth-code", "access 'auth-url' success http code").Default("204").Int()
 	httpArgs.AuthURLRetry = http.Flag("auth-retry", "access 'auth-url' fail and retry count").Default("1").Int()
 	httpArgs.DNSAddress = http.Flag("dns-address", "if set this, proxy will use this dns for resolve doamin").Short('q').Default("").String()
+	httpArgs.DNSHttp = http.Flag("dns-http", "if set this, proxy will use http dns for resolve doamin").Short('Q').Default("").Bool()
 	httpArgs.DNSTTL = http.Flag("dns-ttl", "caching seconds of dns query result").Short('e').Default("300").Int()
 	httpArgs.LocalKey = http.Flag("local-key", "the password for auto encrypt/decrypt local connection data").Short('z').Default("").String()
 	httpArgs.ParentKey = http.Flag("parent-key", "the password for auto encrypt/decrypt parent connection data").Short('Z').Default("").String()
@@ -411,5 +413,5 @@ func poster() {
 		##        ##    ##  ##     ##  ##   ##     ##    
 		##        ##     ##  #######  ##     ##    ##    
 		
-		v%s`+" by snail , blog : http://www.host900.com/\n\n", APP_VERSION)
+		v%s`+ " by snail , blog : http://www.host900.com/\n\n", APP_VERSION)
 }

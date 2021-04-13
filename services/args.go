@@ -1,7 +1,7 @@
 package services
 
 import (
-	"github.com/snail007/goproxy/services/kcpcfg"
+	"proxy/services/kcpcfg"
 
 	"golang.org/x/crypto/ssh"
 )
@@ -148,6 +148,7 @@ type HTTPArgs struct {
 	KCP                 kcpcfg.KCPConfigArgs
 	LocalIPS            *[]string
 	DNSAddress          *string
+	DNSHttp             *bool
 	DNSTTL              *int
 	LocalKey            *string
 	ParentKey           *string
